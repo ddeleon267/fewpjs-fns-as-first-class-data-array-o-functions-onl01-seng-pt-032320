@@ -1,4 +1,3 @@
-debugger
 
 function wakeDog(dogName, dogBreed) {
     let msg = `Wake ${dogName} the ${dogBreed}`
@@ -40,10 +39,7 @@ function unleashDog(dogName, dogBreed) {
 const routine = [wakeDog, leashDog, walkToPark, throwFrisbee, walkHome, unleashDog]
 
 function exerciseDog(dogName, dogBreed){
-    let array = []
-
     for(let i = 0; i < routine.length; i++){
-        array.push(routine[i](dogName, dogBreed))
+        console.log(routine[i])
     }
-    return array
 }
